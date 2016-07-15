@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import _ from 'lodash';
+import {create_array} from './level_gen_func.js';
 
 document.addEventListener("keydown", function(event) {
   console.log(event.which);
@@ -21,11 +22,11 @@ document.addEventListener("keydown", function(event) {
   	$("td#one").attr("class", 'green');
   }
 
-console.log(_.range(5));
+// console.log(_.range(5));
 
+// var
 
-
-
+// console.log(new Array(10));
 
 
 });
