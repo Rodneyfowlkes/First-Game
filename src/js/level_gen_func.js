@@ -1,6 +1,6 @@
 import $ from 'jquery'
 import _ from 'lodash'
-
+import {Square} from './square_class.js'
 
 
 
@@ -15,11 +15,7 @@ return n;
 
 }
 
-class Square {
-	constructor(){
-		this.pokémon = 'chazard';
-	}
-};
+
 
 
 
@@ -39,10 +35,7 @@ var create_grid = function(){
 	    x.forEach(function(m,n){
 	    	
             let sq_name = 'b' + n;
-	    	
             obj2[sq_name] = new Square;
-
-            // obj[y][n] = 'b';
 	    	let columns = n;
 	    	console.log("coloum"+columns);
             console.log("Row" +row);
@@ -53,15 +46,16 @@ var create_grid = function(){
 
     });
 
-    console.log(grid);
-    console.log(obj.a2.b5);
+    // console.log(grid);
+    // console.log(obj);
      
-
+     return obj;
 }
 
-
+let grid_obj = create_grid();
+console.log(grid_obj);
 
 console.log('HI');
 create_array();
-create_grid();
+// create_grid();
 export { create_array};
