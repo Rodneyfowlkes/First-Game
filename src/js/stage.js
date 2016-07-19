@@ -41,7 +41,7 @@ class Stage {
 				// console.log("coloum"+columns);
 				//       console.log("Row" +row);
 
-				$('.' + propname).append(`<td class="${sq_name}"> <img src="" class="img${sq_name}"> </td>`)
+				$('.' + propname).append(`<td class="${sq_name}"> <img src="" class="img${sq_name}"> </td>`);
 
 
 			});
@@ -61,17 +61,32 @@ class Stage {
 
 			let row = index;
 			// console.log(row);
-			 
+			  
 
 			val.forEach(function(number,index2){
 
-				let sq_name = propname +'col' + index2;
-		        let imgname = row +"-"+index2;
+                let sq_name;
+                 let imgname; 
+				if( row == 4 && index2 == 4){
+						 sq_name = propname +'col' + index2;
+		        imgname = row +"-3";
 				let columns = index2;
+				} else if ( row == 3 && index2 == 4){
+					 sq_name = propname +'col' + index2;
+		        imgname = row +"-3";
+
+				}else {
+					 sq_name = propname +'col' + index2;
+		        imgname = row +"-"+index2;
+				let columns = index2;
+                 console.log(sq_name);
+				};
+
+				
 				// this.stageGrid.propname.sq_name.image = number;
 				// console.log("coloum"+columns);
 				//       console.log("Row" +row);
-                 console.log();
+                
 
 				$('.img' + sq_name).attr('src', `images/stage_images/level1/${imgname}.png`);
 

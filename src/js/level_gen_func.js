@@ -53,9 +53,9 @@ let imgarr =[["0-0.png",
 "4-2.png",
 "4-0.png",
 "4-3.png",
-"4-4.png",
-"4-5.png",
-"4-6.png",
+"4-3.png",
+"4-3.png",
+"4-3.png",
 "4-7.png",
 "4-8.png",
 "4-9.png"],
@@ -168,7 +168,37 @@ let eraseplayerimg = function (x,y){
 }
 
 
+let battle_temp = `<img  class="battleimg" src="../images/stage_images/battleimg/tracy_arm_valley2.png">
+  
+  <div class="abso">
+  <div class="player2">
+    <div class="p2hpbar_div">
+              
+       <span class="hp_bar_label">Hp</span>  <span class="p2hpbar"></span>
+         
+        </div> <div class="img_wrap"><img class="pokemonimg" src=""> </div>
+    </div>
+    
+ 
 
+
+  <div class="player1">
+      <div class="img_wrap">
+         <img class="pokemonimg" src="">
+      </div>
+    <div class="p1hpbar_div">
+         <span class="hp_bar_label">Hp</span>   <span class="p1hpbar"></span>
+
+
+      </div>
+    </div>
+   
+   <div class="footer">
+   <div class="game_verdict"></div>
+    <div class="move_menu"></div>
+</div>
+  </div>
+  `;
 // var create_grid = function(){
 
 // 	var create_array = function() {
@@ -215,4 +245,4 @@ let eraseplayerimg = function (x,y){
 // console.log('HI');
 // create_array();
 // create_grid();
-export {imgarr, keystroke, moveplayer, eraseplayerimg};
+export {imgarr, keystroke, moveplayer, eraseplayerimg, battle_temp};

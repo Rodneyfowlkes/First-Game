@@ -1,12 +1,23 @@
 * {
-	border: 1px solid grey;
+
+    
 }
 
 td {
-	width:20px;
-	height:15px;
+	width:32px;
+	height:32px;	
+		border-spacing: 0px;
 }
 
+.row0{
+	overflow:hidden;
+	height:32px;
+}
+
+table{
+	border-spacing: 0px;
+	 border-collapse: collapse;
+}
 
 .blue {
 	background-color: blue;
@@ -25,4 +36,110 @@ td {
 
 .green {
 	background-color: green;
+}
+
+.hpbar{
+	width:100%;
+}
+.onehp{
+    border:none;
+	display:inline-block;
+	width:15px;
+	height:15px;
+	background-color: #A6CF29;
+	margin: -5px;
+	margin-bottom:1%;
+}
+
+.gamescreen{
+   clear: both;
+   color: #FF5F5D;
+   font-size:130%;
+	font-weight:bold;
+	font-family: 'Carter One', cursive;
+    overflow: auto;
+}
+.abso{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.battleimg{
+	position:absolute;
+	width:100%;
+	height:100%;
+
+}
+.img_wrap{
+    
+}
+
+
+.player2 .pokemonimg{
+
+	position: relative;
+	margin-left:40%;
+	background-color: black;
+
+}
+
+.player1{
+clear:left;
+
+.pokemonimg{
+	
+
+	position: relative;
+	left:10%;
+}
+}
+
+.p2hpbar_div{
+	float:left;
+	clear:right;
+	background-color:#212A34;
+	overflow:auto;
+    padding-right: 4%;
+}
+
+
+.p1hpbar_div{
+	background-color:#212A34;
+	margin-left: 57%;
+	margin-right:17%;
+	overflow:auto;
+}
+
+.hp_bar_label {
+	width:50px;
+	background-color:black;
+	color:#F5AB40;
+	font-size:130%;
+	font-weight:bold;
+font-family: 'Mitr', sans-serif;
+}
+
+
+
+.move_menu{ 
+   
+
+	position:relative;
+	margin-left: 75%;
+
+}
+.current_move{
+	color:#F5AB40;
+	font-size:2rem;
+
+}
+.move {
+	display:block;
+}
+
+.footer{
+	background-color:#212A34;
+
 }
