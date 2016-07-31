@@ -205,4 +205,4 @@ let p2health = _.sample(health_range);
 
 console.log(p1health);
 
-export {p1health, display_moves, hpbar,gives_unique_moves};
+export {p1health, display_moves, hpbar,gives_unique_moves,health_range, Trainer,poke_imgobjs,gameover};
